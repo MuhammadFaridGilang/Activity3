@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         //dan dimasukkan kedalam bundle
                         b.putString("a", nama.trim());
 
-                        //memasukkan value dari variabel password dengan kuncu "b"
+                        //memasukkan value dari variabel password dengan kunci "b"
                         //dan dimasukkan kedalam bundle
                         b.putString("b", password.trim());
 

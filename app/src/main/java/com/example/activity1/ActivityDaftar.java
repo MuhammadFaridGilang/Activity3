@@ -26,8 +26,8 @@ public class ActivityDaftar extends AppCompatActivity {
 
         edtNama = findViewById(R.id.edNama);
         edtAlamat = findViewById(R.id.edAlamat);
-        edtEmail = findViewById(R.id.edEmail);
-        edtPassword = findViewById(R.id.edPassword);
+        edtEmail = findViewById(R.id.EdEmail);
+        edtPassword = findViewById(R.id.edPass);
         edtrepass = findViewById(R.id.edrepas);
         fab = findViewById(R.id.fabSimpan);
 
