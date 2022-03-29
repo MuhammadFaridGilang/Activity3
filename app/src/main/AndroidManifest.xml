@@ -10,9 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Activity1">
         <activity
-            android:name=".ActivityDaftar"
-            android:parentActivityName=".MainActivity"
+            android:name=".ItemListviewActivity"
             android:exported="false" />
+        <activity
+            android:name=".ActivityLihatData"
+            android:exported="false"
+            android:parentActivityName=".Home_Activity" />
+        <activity
+            android:name=".Home_Activity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityDaftar"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityHasil"
             android:label="@string/label2"

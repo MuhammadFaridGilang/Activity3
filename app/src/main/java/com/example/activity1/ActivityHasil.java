@@ -34,7 +34,7 @@ public class ActivityHasil extends AppCompatActivity {
         //Menampilkan value dari variabel email kedalam txemail
         txemail.setText(email);
 
-        //Menampilkan value dari variabel email kedalam txpassword
+        //Menampilkan value dari variabel password kedalam txpassword
         txpassword.setText(pass);
     }
 }

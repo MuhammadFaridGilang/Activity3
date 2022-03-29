@@ -1,8 +1,7 @@
 package com.example.activity1;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -56,11 +55,10 @@ public class MainActivity extends AppCompatActivity {
                     //t.show();
 
                 //mengeset email yang benar
-                String email = "admin@mail.com";
+                String email = "farid";
 
                 //mengeset password yang benar
                 String pass = "123";
-
                 //mengecek apakah edittext email dan password terdapat isi atau tidak
                 if ( nama.isEmpty() || password.isEmpty()){
                     //membuat variabel toast dan menampilkan pesan "edittext tidak boleh kosong"
@@ -70,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
                     //menampilkan toast
                     t.show();
                 } else {
-                    //mengecek apakah isi dari email dan password sudah sama dengan email dan password yang sudah diset
+                    //mengecek apakah isi dari email dan password sudah sama dengan email dan password
+                    // yang sudah diset
                     if (nama.equals(email) && password.equals(pass)) {
                         //membuat variabel toast dan menampilkan pesan "login sukses"
                         Toast t = Toast.makeText(getApplicationContext(),
@@ -90,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
                         //dan dimasukkan kedalam bundle
                         b.putString("b", password.trim());
 
-                        //membuat objek intent berpindah activity dari mainactivity ke Activity Hasil
-                        Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
+                        //membuat objek intent berpindah activity dari mainactivity ke Home_Activity
+                        Intent i = new Intent(getApplicationContext(), Home_Activity.class);
 
                         //memasukkan bundle kedalam intent dengan dikirimkan ke ActivityHasil
                         i.putExtras(b);
@@ -120,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
 
         //Membuat kondisi jika yang dipilih adalah id mnDaftar
         if (item.getItemId() == R.id.mnDaftar)
